@@ -1,0 +1,108 @@
+@mixin spaceAround0 {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin col-6 {
+    width: 50%;
+}
+
+@mixin paragraphCommonStyles($width, $titleColor, $textColor) {
+    width: $width;
+    h4.list-item-title {
+        font-size: 13px;
+        line-height: 1.846;
+        font-weight: 600;
+        color: $titleColor;
+        font-family: $OpenSansFont;
+    }
+    p {
+        font-size: 14px;
+        font-family: $OpenSansFont;
+        color: $textColor;
+        line-height: 1.714;
+    }
+}
+
+@mixin containerWithTitle($bgColor, $containerPadding, $titleColor) {
+    display: flex;
+    //margin-bottom: 50px;
+    background: $bgColor;
+    padding: $containerPadding;
+    h3.title {
+        font-family: $OpenSansFont;
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 0.686;
+        color: $titleColor;
+        margin-top: 55px;
+    }
+
+}
+
+@mixin planStyles($tagColor, $planBgColor) {
+
+    background-color: $planBgColor;
+    width: 40%;
+  padding: 40px;
+
+  span.tag {
+        margin: 15px 0;
+        font-size: 11px;
+        font-family: $OpenSansFont;
+        font-weight: 900;
+        color: $white;
+        line-height: 2;
+        text-align: left;
+        text-transform: uppercase;
+        background-color: $tagColor;
+        border-radius: 5px;
+        padding: 6px 18px;
+
+    }
+
+    div.title {
+        font-size: 30px;
+        font-family: $OpenSansFont;
+        color: rgb(46, 59, 78);
+        line-height: 1.333;
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    p.text {
+        font-size: 14px;
+        font-family: $OpenSansFont;
+        color: rgb(130, 151, 167);
+        line-height: 1.786;
+        text-align: left;
+
+    }
+
+    a.btn-buy-now {
+        display: inline-block;
+        font-size: 13px;
+        text-decoration: none;
+        font-family: $OpenSansFont;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.69;
+        text-align: center;
+        border-radius: 3px;
+        background-color: rgb(130, 202, 156);
+        margin: 15px 0;
+        padding: 15px 40px;
+        cursor: pointer;
+    }
+
+    div.supported-platforms {
+        i {
+            color: rgb(197, 197, 197);
+            padding-right: 10px;
+            cursor: pointer;
+        }
+    }
+
+}
+

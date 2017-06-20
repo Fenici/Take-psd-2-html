@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+/* general */
+/* fonts */
+/* colors */
+/* Feature boxes */
+/* A look at the details */
+.bd {
+  border: 1px solid navy; }
+
+html, body {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%; }
+
+header {
+  height: 100%; }
+
+#headers-root-container {
+  height: 100%;
+  background: url("../img/bg-img.png") center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  #headers-root-container div.logo-container {
+    display: table;
+    padding-top: 25px; }
+    #headers-root-container div.logo-container .logo-img {
+      margin-right: 10px; }
+    #headers-root-container div.logo-container .logo-text {
+      display: table-cell;
+      font-size: 24px;
+      vertical-align: middle;
+      font-style: italic;
+      color: #ffffff;
+      font-family: "Merriweather", sans-serif; }
+  #headers-root-container .header-overlay-text-container {
+    height: 100%;
+    width: 40%;
+    top: 40%;
+    margin-left: 70px;
+    position: absolute; }
+    #headers-root-container .header-overlay-text-container .overlay-text-title {
+      font-size: 55px;
+      line-height: 1.2;
+      font-weight: 300;
+      text-align: left;
+      font-family: "Open Sans", sans-serif;
+      color: white; }
+    #headers-root-container .header-overlay-text-container .overlay-text-detail {
+      font-size: 13px;
+      line-height: 1.846;
+      text-align: left;
+      font-family: "Open Sans", sans-serif;
+      color: white; }
+  #headers-root-container .iphone-container {
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    right: 14%;
+    top: 30%;
+    margin: auto;
+    background: url("../img/iPhone.png") no-repeat center center;
+    background-size: contain; }
+
+.col-6 {
+  width: 50%; }
+
+div.take-intro-container {
+  display: flex;
+  width: 100%;
+  height: 80%; }
+  div.take-intro-container .col-6 {
+    margin: 15px; }
+  div.take-intro-container div.left-column-container {
+    margin-top: 50px; }
+    div.take-intro-container div.left-column-container h3.start-new-title {
+      margin-bottom: 20px;
+      font-size: 35px;
+      color: #222626;
+      font-weight: lighter;
+      font-family: "Open Sans", sans-serif; }
+  div.take-intro-container div.right-column-container {
+    margin-top: 200px; }
+  div.take-intro-container p.take-intro-text {
+    font-size: 14px;
+    line-height: 1.714;
+    color: #959595;
+    font-family: "Open Sans", sans-serif; }
+
+.full-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%; }
+
+div.feature-box-container div.first-row-features, div.feature-box-container div.second-row-features {
+  display: flex;
+  width: 100%; }
+
+div.feature-box-container div.first-row-features div.feature-box {
+  flex-basis: 25%; }
+
+div.feature-box-container div.first-row-features div.feature-box:nth-child(1) {
+  background-color: #f5989d; }
+
+div.feature-box-container div.first-row-features div.feature-box:nth-child(2) {
+  background-color: #615f7d; }
+
+div.feature-box-container div.first-row-features div.feature-box:nth-child(3) {
+  background: url("../img/feature-box-bgs/our-clients.png") center no-repeat;
+  background-size: cover; }
+
+div.feature-box-container div.first-row-features div.feature-box:nth-child(4) {
+  background-color: #bd8cbf; }
+
+div.feature-box-container div.second-row-features div.feature-box-lg {
+  background: url("../img/feature-box-bgs/signup_see_why.png") center no-repeat;
+  background-size: cover; }
+
+div.feature-box-container div.second-row-features div.feature-box:nth-child(2) {
+  background-color: #82ca9c; }
+
+div.feature-box-container div.second-row-features div.feature-box:nth-child(3) {
+  background: url("../img/feature-box-bgs/start_something_new.png") center no-repeat;
+  background-size: cover; }
+
+div.feature-box-container .feature-box {
+  flex: 0 0 25%;
+  box-sizing: border-box;
+  padding: 40px 0px; }
+  div.feature-box-container .feature-box h3.title {
+    font-size: 30px;
+    text-align: left;
+    line-height: 1.2;
+    margin: 0;
+    color: white;
+    font-weight: 300;
+    padding-left: 20px;
+    font-family: "Open Sans", sans-serif; }
+  div.feature-box-container .feature-box p.text {
+    font-size: 13px;
+    text-align: left;
+    line-height: 2;
+    padding-left: 20px;
+    color: white;
+    font-family: "Open Sans", sans-serif; }
+  div.feature-box-container .feature-box .fa-long-arrow-right {
+    color: white; }
+  div.feature-box-container .feature-box .find {
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    margin-right: 5px;
+    padding-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif; }
+    div.feature-box-container .feature-box .find i {
+      margin-left: 8px;
+      font-weight: 300; }
+
+div.feature-box-container div.feature-box-lg {
+  flex-grow: 2;
+  padding: 40px 0px; }
+  div.feature-box-container div.feature-box-lg h3.title {
+    font-size: 30px;
+    text-align: left;
+    line-height: 1.2;
+    padding-left: 20px;
+    margin: 0;
+    color: white;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif; }
+  div.feature-box-container div.feature-box-lg p.text {
+    font-size: 13px;
+    text-align: left;
+    line-height: 2;
+    padding-left: 20px;
+    color: white;
+    font-family: "Open Sans", sans-serif; }
+  div.feature-box-container div.feature-box-lg .fa-long-arrow-right {
+    color: white; }
+  div.feature-box-container div.feature-box-lg .find {
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-right: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif; }
+    div.feature-box-container div.feature-box-lg .find i {
+      margin-left: 15px;
+      font-weight: 300; }
+
+section.showcase-section {
+  display: flex;
+  margin-bottom: 50px; }
+  section.showcase-section h3.title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 0.686;
+    color: #222626;
+    margin-top: 55px; }
+  section.showcase-section div.flex-list {
+    display: flex; }
+    section.showcase-section div.flex-list div.list-item {
+      /* list item style*/
+      width: "23%"; }
+      section.showcase-section div.flex-list div.list-item h4.list-item-title {
+        font-size: 13px;
+        line-height: 1.846;
+        font-weight: 600;
+        color: #67676d;
+        font-family: "Open Sans", sans-serif; }
+      section.showcase-section div.flex-list div.list-item p {
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        color: #959595;
+        line-height: 1.714; }
+
+section.steering-wheel {
+  margin-top: 40px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../img/steering-wheel.png") center no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.2); }
+  section.steering-wheel div.overlay-text {
+    position: absolute;
+    bottom: 15%; }
+    section.steering-wheel div.overlay-text h1 {
+      font-size: 60px;
+      font-family: "Open Sans", sans-serif;
+      color: #ffffff;
+      font-weight: 300;
+      font-size: 60px;
+      color: white;
+      line-height: 1.2;
+      text-align: left; }
+    section.steering-wheel div.overlay-text p {
+      width: 500px;
+      font-size: 13px;
+      font-family: "Open Sans", sans-serif;
+      color: #ffffff;
+      font-size: 13px;
+      color: white;
+      line-height: 1.846;
+      text-align: left; }
+    section.steering-wheel div.overlay-text a {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.714;
+      color: white;
+      text-decoration: none;
+      font-family: "Open Sans", sans-serif;
+      text-align: left; }
+      section.steering-wheel div.overlay-text a i {
+        margin-left: 8px;
+        font-weight: 100; }
+
+section.reasons-container {
+  display: flex;
+  background: #82ca9c;
+  padding: 100px 0px; }
+  section.reasons-container h3.title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 0.686;
+    color: white;
+    margin-top: 55px; }
+  section.reasons-container div.flex-list {
+    display: flex; }
+    section.reasons-container div.flex-list div.list-item {
+      /* list item styles*/
+      width: "23%"; }
+      section.reasons-container div.flex-list div.list-item h4.list-item-title {
+        font-size: 13px;
+        line-height: 1.846;
+        font-weight: 600;
+        color: white;
+        font-family: "Open Sans", sans-serif; }
+      section.reasons-container div.flex-list div.list-item p {
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        line-height: 1.714; }
+
+section.plans-container {
+  background-color: #f6f7fa;
+  padding: 70px 0; }
+  section.plans-container div.plans {
+    display: flex;
+    justify-content: space-around; }
+    section.plans-container div.plans div.solo-plan {
+      background-color: none;
+      width: 40%;
+      padding: 40px; }
+      section.plans-container div.plans div.solo-plan span.tag {
+        margin: 15px 0;
+        font-size: 11px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 900;
+        color: white;
+        line-height: 2;
+        text-align: left;
+        text-transform: uppercase;
+        background-color: #e1e1e1;
+        border-radius: 5px;
+        padding: 6px 18px; }
+      section.plans-container div.plans div.solo-plan div.title {
+        font-size: 30px;
+        font-family: "Open Sans", sans-serif;
+        color: #2e3b4e;
+        line-height: 1.333;
+        text-align: left;
+        margin-top: 30px; }
+      section.plans-container div.plans div.solo-plan p.text {
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        color: #8297a7;
+        line-height: 1.786;
+        text-align: left; }
+      section.plans-container div.plans div.solo-plan a.btn-buy-now {
+        display: inline-block;
+        font-size: 13px;
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.69;
+        text-align: center;
+        border-radius: 3px;
+        background-color: #82ca9c;
+        margin: 15px 0;
+        padding: 15px 40px;
+        cursor: pointer; }
+      section.plans-container div.plans div.solo-plan div.supported-platforms i {
+        color: #c5c5c5;
+        padding-right: 10px;
+        cursor: pointer; }
+    section.plans-container div.plans div.team-plan {
+      background-color: white;
+      width: 40%;
+      padding: 40px;
+      /* offset-x | offset-y | blur-radius | spread-radius | color */
+      box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.1); }
+      section.plans-container div.plans div.team-plan span.tag {
+        margin: 15px 0;
+        font-size: 11px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 900;
+        color: white;
+        line-height: 2;
+        text-align: left;
+        text-transform: uppercase;
+        background-color: #bd8cbf;
+        border-radius: 5px;
+        padding: 6px 18px; }
+      section.plans-container div.plans div.team-plan div.title {
+        font-size: 30px;
+        font-family: "Open Sans", sans-serif;
+        color: #2e3b4e;
+        line-height: 1.333;
+        text-align: left;
+        margin-top: 30px; }
+      section.plans-container div.plans div.team-plan p.text {
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+        color: #8297a7;
+        line-height: 1.786;
+        text-align: left; }
+      section.plans-container div.plans div.team-plan a.btn-buy-now {
+        display: inline-block;
+        font-size: 13px;
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.69;
+        text-align: center;
+        border-radius: 3px;
+        background-color: #82ca9c;
+        margin: 15px 0;
+        padding: 15px 40px;
+        cursor: pointer; }
+      section.plans-container div.plans div.team-plan div.supported-platforms i {
+        color: #c5c5c5;
+        padding-right: 10px;
+        cursor: pointer; }

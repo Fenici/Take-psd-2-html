@@ -1,0 +1,367 @@
+html, body {
+    height: $height100;
+}
+
+body {
+    @include spaceAround0;
+}
+
+.grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: $height100;
+}
+
+header {
+    height: $height100;
+}
+
+#headers-root-container {
+    height: $height100;
+    background: url('../img/bg-img.png') center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    div.logo-container {
+        display: table;
+        padding-top: 25px;
+        .logo-img {
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            display: table-cell;
+            font-size: 24px;
+            vertical-align: middle;
+            font-style: italic;
+            color: #ffffff;
+            font-family: $MerriweatherFont;
+        }
+    }
+
+    .header-overlay-text-container {
+        height: $height100;
+        width: 40%;
+        top: 40%;
+        margin-left: 70px;
+        position: absolute;
+
+        .overlay-text-title {
+            font-size: 55px;
+            line-height: 1.2;
+            font-weight: 300;
+            text-align: left;
+            font-family: $OpenSansFont;
+            color: rgb(255, 255, 255);
+        }
+        .overlay-text-detail {
+            font-size: 13px;
+            line-height: 1.846;
+            text-align: left;
+            font-family: $OpenSansFont;
+            color: rgb(255, 255, 255);
+        }
+
+    }
+
+    .iphone-container {
+        height: $height100;
+        width: 40%;
+        position: absolute;
+        right: 14%;
+        top: 30%;
+        margin: auto;
+        background: url('../img/iPhone.png') no-repeat center center;
+        background-size: contain;
+    }
+}
+
+.col-6 {
+    width: 50%;
+}
+
+div.take-intro-container {
+    display: flex;
+    width: 100%;
+    height: 80%;
+
+    .col-6 {
+        margin: 15px;
+    }
+
+    div.left-column-container {
+        margin-top: 50px;
+
+        h3.start-new-title {
+            margin-bottom: 20px;
+            font-size: 35px;
+            color: rgb(34, 38, 38);
+            font-weight: lighter;
+            font-family: $OpenSansFont;
+
+        }
+    }
+
+    div.right-column-container {
+        margin-top: 200px;
+    }
+
+    p.take-intro-text {
+        font-size: 14px;
+        line-height: 1.714;
+        color: rgb(149, 149, 149);
+        font-family: $OpenSansFont;
+    }
+}
+
+.full-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+div.feature-box-container {
+    div.first-row-features, div.second-row-features {
+        display: flex;
+        width: 100%;
+    }
+
+    div.first-row-features {
+        div.feature-box {
+            flex-basis: 25%;
+        }
+        div.feature-box:nth-child(1) {
+            background-color: $design_quality_color;
+        }
+        div.feature-box:nth-child(2) {
+            background-color: $built_to_last;
+
+        }
+        div.feature-box:nth-child(3) {
+            background: url("../img/feature-box-bgs/our-clients.png") center no-repeat;
+            background-size: cover;
+
+        }
+        div.feature-box:nth-child(4) {
+            background-color: $how_to_shoo;
+        }
+    }
+
+    div.second-row-features {
+        div.feature-box-lg {
+            background: url("../img/feature-box-bgs/signup_see_why.png") center no-repeat;
+            background-size: cover;
+
+        }
+        div.feature-box:nth-child(2) {
+            background-color: $perfect_pictures;
+        }
+        div.feature-box:nth-child(3) {
+            background: url("../img/feature-box-bgs/start_something_new.png") center no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .feature-box {
+        flex: 0 0 25%;
+        box-sizing: border-box;
+        padding: 40px 0px;
+
+        h3.title {
+            font-size: 30px;
+            text-align: left;
+            line-height: 1.2;
+            margin: 0;
+            color: $white;
+            font-weight: 300;
+            padding-left: 20px;
+            font-family: $OpenSansFont;
+        }
+        p.text {
+            font-size: 13px;
+            text-align: left;
+            line-height: 2;
+            padding-left: 20px;
+            color: $white;
+            font-family: $OpenSansFont;
+        }
+        .fa-long-arrow-right {
+            color: $white;
+        }
+        .find {
+            font-size: 14px;
+            text-align: left;
+            font-weight: bold;
+            margin-right: 5px;
+            padding-left: 20px;
+            color: $white;
+            text-decoration: none;
+            font-family: $OpenSansFont;
+            i {
+                margin-left: 8px;
+                font-weight: 300;
+            }
+
+        }
+
+    }
+
+    div.feature-box-lg {
+        //height: 200px;
+        flex-grow: 2;
+        padding: 40px 0px;
+
+        h3.title {
+            font-size: 30px;
+            text-align: left;
+            line-height: 1.2;
+            padding-left: 20px;
+            margin: 0;
+            color: $white;
+            font-weight: 300;
+            font-family: $OpenSansFont;
+        }
+        p.text {
+            font-size: 13px;
+            text-align: left;
+            line-height: 2;
+            padding-left: 20px;
+            color: $white;
+            font-family: $OpenSansFont;
+        }
+        .fa-long-arrow-right {
+            color: $white;
+        }
+        .find {
+            font-size: 14px;
+            text-align: left;
+            font-weight: bold;
+            padding-left: 20px;
+            margin-right: 5px;
+            color: $white;
+            text-decoration: none;
+            font-family: $OpenSansFont;
+
+            i {
+                margin-left: 15px;
+                font-weight: 300;
+            }
+
+        }
+    }
+}
+
+section.showcase-section {
+    display: flex;
+    margin-bottom: 50px;
+    h3.title {
+        font-family: $OpenSansFont;
+
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 0.686;
+        color: rgb(34, 38, 38);
+        margin-top: 55px;
+    }
+
+    div.flex-list {
+        display: flex;
+
+        div.list-item {
+            /* list item style*/
+
+            @include paragraphCommonStyles('23%', $detailsTitleColor, $detailsParagraphColor);
+        }
+    }
+}
+
+section.steering-wheel {
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../img/steering-wheel.png") center no-repeat;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    div.overlay-text {
+        position: absolute;
+        bottom: 15%;
+
+        h1 {
+            font-size: 60px;
+            font-family: $OpenSansFont;
+
+            color: #ffffff;
+            font-weight: 300;
+            font-size: 60px;
+            color: rgb(255, 255, 255);
+            line-height: 1.2;
+            text-align: left;
+        }
+
+        p {
+            width: 500px;
+            font-size: 13px;
+            font-family: $OpenSansFont;
+
+            color: #ffffff;
+            font-size: 13px;
+            color: rgb(255, 255, 255);
+            line-height: 1.846;
+            text-align: left;
+        }
+
+        a {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.714;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-family: $OpenSansFont;
+
+            text-align: left;
+            i {
+                margin-left: 8px;
+                font-weight: 100;
+            }
+
+        }
+    }
+
+}
+
+section.reasons-container {
+    @include containerWithTitle($lightGreen, 100px 0px, $white);
+
+    div.flex-list {
+        display: flex;
+
+        div.list-item {
+            /* list item styles*/
+            @include paragraphCommonStyles('23%', $white, $white);
+        }
+    }
+}
+
+section.plans-container {
+    background-color: rgb(246, 247, 250);
+    padding: 70px 0;
+
+    div.plans {
+        display: flex;
+        justify-content: space-around;
+
+        div.solo-plan {
+            @include planStyles($gray, none)
+        }
+        div.team-plan {
+            @include planStyles($purple, $white);
+
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+
+            box-shadow: 0px 0px 120px rgba(0, 0, 0, 0.1);
+        }
+
+    }
+}
