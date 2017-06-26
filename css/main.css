@@ -15,6 +15,9 @@ body {
   margin: 0;
   padding: 0; }
 
+.clear {
+  clear: both; }
+
 .grid-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -399,3 +402,77 @@ section.plans-container {
         color: #c5c5c5;
         padding-right: 10px;
         cursor: pointer; }
+
+footer {
+  background: #192431;
+  position: relative;
+  padding-bottom: 80px; }
+  footer .common-title-styles, footer div.footer-left .contact .title, footer div.footer-left div.menu-list div.menu-item h4.title, footer div.footer-right div.touch h4.title {
+    font-family: "Open Sans", sans-serif;
+    color: #f6f7fa;
+    font-size: 13px;
+    line-height: 1.846;
+    font-weight: bold; }
+  footer div.footer-left {
+    width: 48%;
+    float: left; }
+    footer div.footer-left .contact {
+      margin-top: 15%;
+      width: 80%; }
+      footer div.footer-left .contact .text {
+        color: #f6f7fa;
+        font-size: 13px;
+        font-weight: 300;
+        font-family: "Open Sans", sans-serif;
+        line-height: 1.846; }
+    footer div.footer-left div.menu-list {
+      display: flex;
+      color: white; }
+      footer div.footer-left div.menu-list div.menu-item ul {
+        padding-left: 0;
+        margin-right: 50px; }
+      footer div.footer-left div.menu-list div.menu-item ul li {
+        font-size: 13px;
+        font-family: "Open Sans", sans-serif;
+        list-style: none; }
+  footer div.footer-right {
+    width: 50%;
+    float: left; }
+    footer div.footer-right div.touch {
+      margin-top: 15%; }
+      footer div.footer-right div.touch form {
+        display: inline-block; }
+        footer div.footer-right div.touch form input {
+          background-color: #f6f7fa;
+          border-radius: 2px 0px 0px 2px;
+          height: 58px;
+          border: none;
+          font-size: 44px;
+          float: left; }
+        footer div.footer-right div.touch form div.tick-svg-container {
+          height: 52px;
+          line-height: 52px;
+          position: absolute;
+          margin: 5px 0 0 14px; }
+        footer div.footer-right div.touch form svg:before, footer div.footer-right div.touch form svg:after {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          line-height: normal; }
+        footer div.footer-right div.touch form div.tick {
+          cursor: pointer;
+          display: inline-block;
+          height: 56px;
+          width: 50px;
+          text-align: center;
+          background-color: #82ca9c;
+          border: solid 1px #82ca9c;
+          padding-top: 1px;
+          padding-bottom: 1px;
+          border-radius: 0 2px 2px 0;
+          vertical-align: top;
+          float: left; }
+      footer div.footer-right div.touch p.alert {
+        font-size: 12px;
+        font-family: "Open Sans", sans-serif;
+        color: #57697f; }

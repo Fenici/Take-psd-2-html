@@ -6,6 +6,10 @@ body {
     @include spaceAround0;
 }
 
+.clear {
+    clear: both;
+}
+
 .grid-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -364,4 +368,129 @@ section.plans-container {
         }
 
     }
+}
+
+footer {
+    background: #192431;
+    position: relative;
+    padding-bottom: 80px;
+
+    .common-title-styles {
+        font-family: $OpenSansFont;
+        color: rgb(246, 247, 250);
+        font-size: 13px;
+        line-height: 1.846;
+        font-weight: bold;
+    }
+
+    div.footer-left {
+        width: 48%;
+        float: left;
+        .contact {
+            margin-top: 15%;
+            width: 80%;
+            .title {
+                @extend .common-title-styles;
+            }
+            .text {
+                color: rgb(246, 247, 250);
+                font-size: 13px;
+                font-weight: 300;
+                font-family: $OpenSansFont;
+                line-height: 1.846;
+
+            }
+        }
+
+        div.menu-list {
+            display: flex;
+            color: $white;
+
+            div.menu-item {
+                h4.title {
+                    @extend .common-title-styles;
+
+                }
+                ul {
+                    //display: flex;
+                    //flex-direction: column;
+                    padding-left: 0;
+                    margin-right: 50px;
+                }
+                ul li {
+                    font-size: 13px;
+                    font-family: $OpenSansFont;
+                    list-style: none;
+
+                }
+            }
+
+        }
+
+    }
+
+    div.footer-right {
+        width: 50%;
+        float: left;
+        div.touch {
+            margin-top: 15%;
+            h4.title {
+                @extend .common-title-styles;
+
+            }
+
+            form {
+                display: inline-block;
+                input {
+                    background-color: rgb(246, 247, 250);
+                    border-radius: 2px 0px 0px 2px;
+                    height: 58px;
+                    border: none;
+                    font-size: 44px;
+                    float: left;
+                }
+
+                div.tick-svg-container {
+                    height: 52px;
+                    line-height: 52px;
+                    position: absolute;
+                    margin: 5px 0 0 14px;
+
+                }
+
+                svg {
+                    &:before, &:after {
+                        content: "";
+                        display: inline-block;
+                        vertical-align: middle;
+                        line-height: normal;
+                    }
+                }
+
+                div.tick {
+                    cursor: pointer;
+                    display: inline-block;
+                    height: 56px;
+                    width: 50px;
+                    text-align: center;
+                    background-color: #82ca9c;
+                    border: solid 1px #82ca9c;
+                    padding-top: 1px;
+                    padding-bottom: 1px;
+                    border-radius: 0 2px 2px 0;
+                    vertical-align: top;
+                    float: left;
+                }
+
+            }
+            p.alert {
+                font-size: 12px;
+                font-family: $OpenSansFont;
+                color: #57697f;
+            }
+
+        }
+
+    }
+
 }
